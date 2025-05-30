@@ -1,0 +1,81 @@
+laravel-ecommerce/
+├── app/
+│   ├── Console/
+│   ├── Exceptions/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   │   ├── CategoryController.php
+│   │   │   │   ├── OrderController.php
+│   │   │   │   └── ProductController.php
+│   │   │   ├── CartController.php
+│   │   │   ├── CheckoutController.php
+│   │   │   ├── HomeController.php
+│   │   │   ├── OrderController.php
+│   │   │   └── ProductController.php
+│   │   ├── Middleware/
+│   │   │   └── AdminMiddleware.php
+│   │   └── Requests/
+│   ├── Models/
+│   │   ├── Cart.php
+│   │   ├── Category.php
+│   │   ├── Order.php
+│   │   ├── OrderDetail.php
+│   │   ├── Payment.php
+│   │   ├── Product.php
+│   │   └── User.php
+│   ├── Providers/
+│   └── Services/
+│       └── PaymentGateway/
+│           ├── MidtransService.php
+│           └── PaymentGatewayInterface.php
+├── config/
+├── database/
+│   ├── factories/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── js/
+│   │   ├── components/
+│   │   │   ├── Cart.vue
+│   │   │   ├── ProductList.vue
+│   │   │   └── CheckoutForm.vue
+│   │   └── app.js
+│   ├── sass/
+│   └── views/
+│       ├── admin/
+│       ├── auth/
+│       ├── cart/
+│       ├── checkout/
+│       ├── orders/
+│       ├── products/
+│       └── layouts/
+├── routes/
+├── storage/
+├── tests/
+│   ├── Feature/
+│   │   ├── AdminTest.php
+│   │   ├── CartTest.php
+│   │   ├── CheckoutTest.php
+│   │   └── ProductTest.php
+│   └── Unit/
+│       ├── Models/
+│       └── Services/
+├── .env.example
+├── .gitignore
+├── artisan
+├── composer.json
+├── package.json
+├── phpunit.xml
+└── vite.config.js
+
+
+Fitur Bonus yang Diimplementasikan :
+
+Integrasi Midtrans - Pembayaran online dengan berbagai metode
+Deployment Script - Siap deploy ke VPS dengan nginx
+Frontend Vue.js - Interaktif tanpa reload halaman
+Testing Lengkap - Unit test dan feature test
+Queue System - Proses background untuk tugas berat
+Responsive Design - Mobile-friendly dengan Tailwind CSS
